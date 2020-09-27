@@ -318,61 +318,6 @@
           <li class="text-dark">
             <h2 class="h2">DataTable 測試</h2>
           </li>
-          <li>
-
-            <!-- Please note that disabling NULL sessions may have an adverse impact on functionality, as some applications
-            and network
-            environments may depend on them for proper operation. Refer to
-            <URLLink LinkURL="http://support.microsoft.com/kb/823659" href="http://support.microsoft.com/kb/823659"
-              LinkTitle="http://support.microsoft.com/kb/823659">Microsoft Knowledge Base Article 823659</URLLink>
-            for more information. -->
-
-            <!-- <form>
-              <input type="text" name="2">
-              <p contenteditable="true" name="1" class="w-100 border border-dark">
-                Please note that disabling NULL sessions may have an adverse impact on functionality, as some
-                applications
-                and network
-                environments may depend on them for proper operation. Refer to
-                <a LinkURL="http://support.microsoft.com/kb/823659" href="http://support.microsoft.com/kb/823659"
-                  LinkTitle="http://support.microsoft.com/kb/823659">Microsoft Knowledge Base Article 823659</a>
-                for more information.
-              </p>
-              <div class="btn btn-dark">su</div>
-              <button type="submit">123</button>
-            </form> -->
-            <p>
-              <Paragraph>
-                <ContainerBlockElement>
-                  <ContainerBlockElement>
-                    <Paragraph>
-                      HTTP GET request to
-                      <URLLink LinkURL="http://10.240.120.206/" LinkTitle="http://10.240.120.206/" />
-                    </Paragraph>
-                    HTTP response code was an expected 200
-                    <Paragraph>HTTP header 'Content-Location' not present</Paragraph>
-                    HTTP response code was an expected 200HTTP response code was an expected 200HTTP response code was
-                    an expected
-                    200HTTP response code was an expected 200HTTP response code was an expected 200HTTP response code
-                    was an expected
-                    200
-                    <Paragraph preformat="true">
-                      <!-- 25: </style> 26: </head> 27:
-                      <body> 28: <div id="container"> 29: ...;clcid=0x409"><img src="welcome.png" alt="IIS7" width="571"
-                            height=...  -->
-                    </Paragraph>
-                  </ContainerBlockElement>
-                </ContainerBlockElement>
-              </Paragraph>
-            </p>
-            <textarea class="w-100" style="height: 100px;">
-              <Paragraph>//n\t\t\\tPlease note that disabling NULL sessions may have an adverse impact on functionality, as some applications and network environments may depend on them for proper operation. Refer to\n\t\t\t<URLLink LinkTitle="http://support.microsoft.com/kb/823659" LinkURL="http://support.microsoft.com/kb/823659" href="http://support.microsoft.com/kb/823659">Microsoft Knowledge Base Article
-                
-                
-                
-                823659</URLLink>\n\t\t\tfor more information.\n\t\t</Paragraph>
-            </textarea>
-          </li>
           <!-- 查詢區塊 -->
           <li class="text-white py-4 px-2" style="background-color:#6c757da3">
             <div id="result"></div>
@@ -423,8 +368,8 @@
           </li>
           <!-- 按鍵欄 -->
           <li class="py-4">
-            <a href="../1_1/index.html"><button type="button" class="btn btn-dark">新增資產</button></a>
-            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modal_import">匯入資產</button>
+            <a href="../1_1/index.html"><button type="button" class="btn btn-dark">新增</button></a>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modal_import">匯入</button>
           </li>
           <!-- 表格 -->
           <li class="">
@@ -442,106 +387,6 @@
             </table>
           </li>
         </ul>
-        <!-- The Modal -->
-        <!-- 匯入資產 -->
-        <div class="modal" id="Modal_import">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title text-dark">匯入資產</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-              <!-- Modal body -->
-              <div class="modal-body">
-                <form>
-                  <div class="form-group d-flex align-items-center">
-                    <label class="col-auto col-form-label">檔案名稱</label>
-                    <div class="col-8">
-                      <label class="btn btn-secondary">
-                        <input id="upload_file" class="d-none" type="file">
-                        <i class="fa fa-upload"></i> 選擇檔案
-                      </label>
-                    </div>
-                  </div>
-                  <div class="form-group d-flex align-items-center">
-                    <label class="col-auto col-form-label">檔案描述</label>
-                    <div class="col-8">
-                      <input class="form-control" placeholder="請輸入文字，長度上限100字">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-auto col-form-label py-0 text-danger text-right">注意:</label>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-auto col-form-label py-0 text-danger text-right">1.副檔名稱為.xlsx</label>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-auto col-form-label py-0 text-danger text-right">2.檔案上傳上限為1024MB</label>
-                  </div>
-                </form>
-              </div>
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">匯入</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 刪除資產 -->
-        <div class="modal" id="Modal_del">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title text-dark">刪除資產</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-              <!-- Modal body -->
-              <div class="modal-body">
-                <div class="text-dark">確認是否刪除資產?</div>
-              </div>
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-dark" data-dismiss="modal">確認</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- other -->
-        <div class="modal fade" id="DescModal" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">詳細資料</h5>
-              </div>
-              <div class="modal-body">
-                <!-- <div id="innerData"></div> -->
-                <ul class="Ul_nonStyle">
-                  <li class="border border-dark d-flex">
-                    <div class="col-4 border-right border-dark">title</div>
-                    <div class="col-8">content</div>
-                  </li>
-                  <li class="border border-dark d-flex">
-                    <div class="col-4 border-right border-dark">title</div>
-                    <div class="col-8">content</div>
-                  </li>
-                  <li class="border border-dark d-flex">
-                    <div class="col-4 border-right border-dark">title</div>
-                    <div class="col-8">content</div>
-                  </li>
-                </ul>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">關閉</button>
-              </div>
-            </div>
-            <!-- /.modal-content -->
-          </div>
-          <!-- /.modal-dialog -->
-        </div>
       </div>
       <!-- /page content -->
 
